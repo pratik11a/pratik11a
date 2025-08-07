@@ -132,6 +132,19 @@ body {
     margin-left: auto;
     white-space: nowrap;
 }
+.skills-list {
+    padding-left: 0;
+    list-style: none;
+}
+
+.skills-list li {
+    margin-bottom: 8px;
+    color: #666666;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    word-wrap: break-word;
+}
+
 .contact {
     margin-top: 8px;
     color: #555;
@@ -241,5 +254,18 @@ body {
     }
     .section .job-header .date::after {
         content: " ";
+    }
+    .skills-list {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+    .skills-list li {
+        word-break: break-word;
+        line-height: 1.6;
+        margin-bottom: 8px;
+    }
+    .skills-list li strong {
+        font-weight: bold;
+        color: #333;
     }
 }
