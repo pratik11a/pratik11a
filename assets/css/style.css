@@ -129,17 +129,49 @@ body {
 .contact {
     margin-top: 8px;
     color: #555;
-    font-size: 1rem;
+    font-size: 0.9rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
 }
 
-.profile-text {
+.contact-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+    color: white;
+    transition: opacity 0.2s ease;
+    white-space: nowrap;
+    font-size: 0.85rem;
+}
+
+.contact-link:hover {
+    opacity: 0.8;
+}
+
+.contact-link .icon {
+    flex-shrink: 0;
+}
+
+.contact-link span {
+    vertical-align: middle;
+}
+
+.contact-link.profile-text {
     text-decoration: underline;
-    color: #444444;
-    transition: color 0.2s ease;
 }
 
-.profile-text:hover {
-    color: #666666;
+.contact-link.profile-text:hover {
+    text-decoration: none;
+}
+
+.contact .separator {
+    margin: 0 4px;
+    color: white;
+    opacity: 0.7;
+    font-size: 0.8rem;
 }
 
 @media (max-width: 600px) {
@@ -147,11 +179,42 @@ body {
         padding: 18px 6px;
     }
     .header {
-        flex-direction: column;
+        flex-direction: row;
         align-items: flex-start;
+        justify-content: space-between;
+        gap: 16px;
     }
     .avatar {
-        margin-bottom: 12px;
+        order: 1;
+        margin-bottom: 0;
         margin-right: 0;
+        width: 80px;
+        height: 80px;
+        flex-shrink: 0;
+    }
+    .name-title {
+        order: 2;
+        text-align: right;
+        flex: 1;
+    }
+    .name-title h1 {
+        font-size: 1.8rem;
+        margin-bottom: 4px;
+    }
+    .name-title p {
+        margin-bottom: 12px;
+    }
+    .contact {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 8px;
+        margin-top: 12px;
+    }
+    .contact .separator {
+        display: none;
+    }
+    .contact-link {
+        font-size: 0.8rem;
+        justify-content: flex-end;
     }
 }
