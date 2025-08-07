@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 }
             }
         },
+        { id: 'domains', path: 'assets/html/domains.html' },
         { id: 'education', path: 'assets/html/education.html' },
         { id: 'projects', path: 'assets/html/projects.html' }
     ];

@@ -264,8 +264,39 @@ body {
         line-height: 1.6;
         margin-bottom: 8px;
     }
-    .skills-list li strong {
+        .skills-list li strong {
         font-weight: bold;
         color: #333;
     }
+    .domains-list {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+    .domains-list li {
+        word-break: break-word;
+        line-height: 1.6;
+        margin-bottom: 8px;
+    }
+    .domains-list li strong {
+        font-weight: bold;
+        color: #333;
+    }
+}
+
+.domains-list {
+    padding-left: 0;
+    list-style: none;
+}
+
+.domains-list li {
+    margin-bottom: 8px;
+    color: #666666;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    word-wrap: break-word;
+}
+
+.domains-list li strong {
+    font-weight: bold;
+    color: #333;
 }
