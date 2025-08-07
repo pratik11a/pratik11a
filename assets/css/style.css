@@ -56,7 +56,7 @@ body {
 }
 .section h2 {
     font-size: 1.2rem;
-    color: #2d6cdf;
+    color: #808080;
     margin-bottom: 10px;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -65,9 +65,9 @@ body {
     margin: 0;
     padding-left: 20px;
 }
-.section li {
+.section li, .section p {
     margin-bottom: 6px;
-    color: #444;
+    color: #666666;
     font-size: 0.95rem;
 }
 .section .job-title {
@@ -85,6 +85,16 @@ body {
     margin-top: 8px;
     color: #555;
     font-size: 1rem;
+}
+
+.profile-text {
+    text-decoration: underline;
+    color: #444444;
+    transition: color 0.2s ease;
+}
+
+.profile-text:hover {
+    color: #666666;
 }
 @media (max-width: 600px) {
     .resume-container {
