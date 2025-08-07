@@ -21,7 +21,12 @@ jobs:
         node-version: '18.x'
         
     - name: 📦 Install dependencies
-      run: npm install --production=false || echo "No package-lock.json found, using npm install"
+      run: |
+        if [ -f package-lock.json ]; then
+          npm ci --include=dev || npm install
+        else
+          npm install
+        fi
       
     - name: 🧪 Run unit tests
       run: npm test

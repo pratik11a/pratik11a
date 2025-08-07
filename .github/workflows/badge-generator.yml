@@ -21,6 +21,14 @@ jobs:
       with:
         node-version: '18.x'
         
+    - name: 📦 Install dependencies (if needed)
+      run: |
+        if [ -f package-lock.json ]; then
+          npm ci --include=dev || npm install
+        else
+          npm install
+        fi
+        
     - name: 🧪 Run tests and capture results
       id: test_results
       run: |
