@@ -6,8 +6,16 @@
   "scripts": {
     "test": "node tests/company.test.js",
     "test:watch": "nodemon tests/company.test.js",
+    "test:ci": "node tests/company.test.js",
     "serve": "python3 -m http.server 8080",
-    "serve:dev": "python3 -m http.server 8000"
+    "serve:dev": "python3 -m http.server 8000",
+    "validate:js": "find . -name '*.js' -not -path './node_modules/*' -exec node -c {} \\;",
+    "validate:html": "echo 'HTML validation would run here'",
+    "validate:css": "echo 'CSS validation would run here'",
+    "validate": "npm run validate:js && npm run validate:html && npm run validate:css",
+    "ci": "npm run validate && npm test",
+    "build": "echo 'Static site - no build step needed'",
+    "deploy": "echo 'Ready for deployment to GitHub Pages or other static hosting'"
   },
   "keywords": [
     "portfolio",
