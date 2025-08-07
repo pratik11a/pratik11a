@@ -1,0 +1,31 @@
+{
+  "name": "pratik11a-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio website with responsive design",
+  "main": "index.html",
+  "scripts": {
+    "test": "node tests/company.test.js",
+    "test:watch": "nodemon tests/company.test.js",
+    "serve": "python3 -m http.server 8080",
+    "serve:dev": "python3 -m http.server 8000"
+  },
+  "keywords": [
+    "portfolio",
+    "javascript",
+    "html",
+    "css",
+    "responsive"
+  ],
+  "author": "Pratik Adhau",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pratik11a/pratik11a.git"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
