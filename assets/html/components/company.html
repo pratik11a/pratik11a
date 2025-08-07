@@ -1,0 +1,10 @@
+<div class="company-item">
+    <div class="job-header">
+        <button class="job-title" aria-expanded="false" aria-controls="company-desc-${id}">${title}</button>
+        <a href="${companyUrl}" class="company" target="_blank" rel="noopener noreferrer">@ ${company}</a>
+        <time class="date">${date}</time>
+    </div>
+    <div class="job-description" id="company-desc-${id}" aria-hidden="true">
+        ${description}
+    </div>
+</div>
